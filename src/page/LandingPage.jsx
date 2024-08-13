@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const LandingPage = () => {
     return <>
@@ -7,24 +9,7 @@ const LandingPage = () => {
 
 
         <div className=" bg-gray-900 text-gray-200">
-            <header className="flex items-center justify-between px-6 py-4 border-b border-gray-700">
-                <a href="#" prefetch={false} className='flex gap-2 items-center'>
-                    <BotIcon className="h-8 w-8 text-white" />
-                    <span className=" text-white text-lg">CHATBOT</span>
-                </a>
-                <div className="flex items-center space-x-4">
-                    <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                        Login
-                    </a>
-                    <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                        Register
-                    </a>
-                    <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                        <SettingsIcon className="h-5 w-5 text-white" />
-                        <span className="sr-only">Settings</span>
-                    </a>
-                </div>
-            </header>
+            <Navbar />
 
             <main>
 
@@ -43,7 +28,7 @@ const LandingPage = () => {
                                 </p>
                                 <a
                                     href="#"
-                                    className="inline-flex h-9 items-center justify-center rounded-md bg-primary  w-full py-2 text-xl bg-slate-500 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                                    className="inline-flex h-9 items-center justify-center rounded-md bg-primary  w-full py-2 text-xl bg-slate-600 hover:bg-slate-700 duration-200 transition-all font-medium text-primary-foreground shadow  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                                     prefetch={false}
                                 >
                                     Start Chatting
@@ -173,14 +158,14 @@ const LandingPage = () => {
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                                 Elevate Your Workflow with Conversational AI
                             </h2>
-                            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-muted-foreground">
+                            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
                                 Our advanced chatbot is here to assist you with code, information, and answers to all your questions.
                                 Start your journey today.
                             </p>
                         </div>
                         <a
                             href="#"
-                            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-xl bg-slate-500 font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-xl bg-slate-600 hover:bg-slate-700 duration-200 transition-all font-medium text-primary-foreground shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                             prefetch={false}
                         >
                             Start Chatting
@@ -188,19 +173,7 @@ const LandingPage = () => {
                     </div>
                 </section>
             </main>
-            <footer className="bg-gray-800 py-6 px-6 md:py-8 md:px-12 lg:py-10 lg:px-20">
-                <div className="max-w-4xl mx-auto flex items-center justify-between">
-                    <p className="text-sm text-gray-400">&copy; 2024 Chatbot Service. All rights reserved.</p>
-                    <div className="flex items-center space-x-4">
-                        <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                            Privacy Policy
-                        </a>
-                        <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                            Terms of Service
-                        </a>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
 
 
@@ -231,7 +204,6 @@ function BotIcon(props) {
         </svg>
     )
 }
-
 
 function ContactIcon(props) {
     return (
@@ -370,25 +342,7 @@ function ScalingIcon(props) {
 }
 
 
-function SettingsIcon(props) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-            <circle cx="12" cy="12" r="3" />
-        </svg>
-    )
-}
+
 
 
 function TimerIcon(props) {
