@@ -1,9 +1,11 @@
 import React from 'react'
 import LandingPage from './page/LandingPage'
+import Register from './components/Register'
 
 const App = () => {
   return <>
-    <LandingPage />
+    {/* <LandingPage /> */}
+    <Register />
   </>
 }
 
