@@ -30,7 +30,7 @@ const Register = () => {
                             </div>
                             <div className="space-y-3">
                                 <label htmlFor="email" className='text-white font-semibold text-lg'>Email :</label>
-                                <input id="email" type="email" placeholder="john@example.com" className='bg-slate-800 text-slate-200 border-b' />
+                                <input id="email" type="email" placeholder="john@example.com" className='bg-slate-800 text-slate-200 border-b ' />
                             </div>
                         </div>
                         <div className="space-y-3">
