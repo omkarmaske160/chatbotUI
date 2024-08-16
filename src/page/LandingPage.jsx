@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
     return <>
@@ -26,13 +27,13 @@ const LandingPage = () => {
                                     Our advanced chatbot is here to provide you with code, information, and answers to all your questions.
                                     Start your journey today.
                                 </p>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/chat"
                                     className="inline-flex h-9 items-center justify-center rounded-md bg-primary  w-full py-2 text-xl bg-slate-600 hover:bg-slate-700 duration-200 transition-all font-medium text-primary-foreground shadow  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                                     prefetch={false}
                                 >
                                     Start Chatting
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -163,13 +164,13 @@ const LandingPage = () => {
                                 Start your journey today.
                             </p>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            to="/chat"
                             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-xl bg-slate-600 hover:bg-slate-700 duration-200 transition-all font-medium text-primary-foreground shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                             prefetch={false}
                         >
                             Start Chatting
-                        </a>
+                        </Link>
                     </div>
                 </section>
             </main>

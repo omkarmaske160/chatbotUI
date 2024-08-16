@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return <>
         <header className="flex items-center justify-between px-6 py-4 border-b border-gray-700">
-            <a href="#" prefetch={false} className='flex gap-2 items-center'>
+            <Link to="/" prefetch={false} className='flex gap-2 items-center'>
                 <BotIcon className="h-8 w-8 text-white" />
                 <span className=" text-white text-lg">CHATBOT</span>
-            </a>
+            </Link>
             <div className="flex items-center space-x-4">
-                <Link to="/register" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
+                <Link to="/register" className=" font-medium text-white hover:text-gray-400" prefetch={false}>
                     Login
                 </Link>
 
