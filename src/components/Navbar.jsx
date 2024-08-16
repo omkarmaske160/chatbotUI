@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return <>
@@ -8,12 +9,10 @@ const Navbar = () => {
                 <span className=" text-white text-lg">CHATBOT</span>
             </a>
             <div className="flex items-center space-x-4">
-                <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
+                <Link to="/register" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
                     Login
-                </a>
-                <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
-                    Register
-                </a>
+                </Link>
+
                 <a href="#" className="text-sm font-medium hover:text-gray-400" prefetch={false}>
                     <SettingsIcon className="h-5 w-5 text-white" />
                     <span className="sr-only">Settings</span>

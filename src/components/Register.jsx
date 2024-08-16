@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import Navbar from './Navbar';
 
 const Register = () => {
     const [isRegister, setIsRegister] = useState(true);
@@ -56,21 +57,22 @@ const Register = () => {
     };
 
     return (
-        <div className='bg-slate-800 h-screen flex flex-col items-center justify-center'>
-            <div className="space-y-1 flex flex-col items-center mt-10">
-                <h1 className="text-[45px] font-bold text-white">
+        <div className='bg-slate-800 h-screen  w-full  flex flex-col items-center justify-center'>
+
+            <div className="space-y-1 flex flex-col items-center justify-center mt-10">
+                <h1 className="text-[45px] text-center font-bold text-white">
                     {isRegister ? 'Register for our Chatbot' : 'Login to your Account'}
                 </h1>
-                <p className="text-muted-foreground text-lg text-slate-200">
+                <p className="text-muted-foreground text-center text-lg text-slate-200">
                     {isRegister ? 'Sign up to start using our powerful chatbot assistant.' : 'Sign in to continue.'}
                 </p>
             </div>
             <motion.div
-                className="flex flex-col md:flex-row gap-8 items-center justify-center mx-auto max-w-7xl py-12 -mt-10"
+                className="flex flex-col md:flex-row gap-8 items-center justify-center max-w-7xl py-16 md:py-8 -mt-10"
                 animate={controls}
             >
-                <div className="flex flex-col items-center justify-center text-center">
-                    <div style={{ width: '500px', height: '500px' }}>
+                <div className="md:flex flex-col hidden items-center justify-center text-center">
+                    <div style={{}}>
                         <img
                             src="./chatbot.png"
                             alt="Chatbot"
@@ -154,7 +156,7 @@ const Register = () => {
                             )}
                         </div>
                         <div>
-                            <button type="submit" className="w-full mt-5 bg-slate-600 hover:bg-slate-500 duration-200 transition-all text-lg text-white py-2 rounded-lg">
+                            <button type="submit" className="w-full mt-10 bg-slate-600 hover:bg-slate-500 duration-200 transition-all text-lg text-white py-2 rounded-lg">
                                 {isRegister ? 'Register' : 'Login'}
                             </button>
                             <p className='text-center text-slate-300 mt-1'>
