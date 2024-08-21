@@ -8,7 +8,7 @@ const ChatPage = () => {
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
                 <div className="flex text-white items-start gap-3">
                     <div className="rounded-full w-10 h-10 bg-[#55efc4] text-3xl flex items-center justify-center">🤖</div>
-                    <div className="max-w-[70%] bg-primary text-primary-foreground border-slate-200 p-3 rounded-lg rounded-tl-none">
+                    <div className="max-w-[70%] bg-primary text-primary-foreground  p-3 rounded-lg rounded-tl-none">
                         <p>Hello, how can I assist you today?</p>
                     </div>
                 </div>
