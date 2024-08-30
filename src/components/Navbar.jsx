@@ -6,7 +6,7 @@ const Navbar = () => {
         <header className="flex items-center justify-between px-6 py-4 border-b border-gray-700">
             <Link to="/" prefetch={false} className='flex gap-2 items-center'>
                 <BotIcon className="h-8 w-8 text-white" />
-                <span className=" text-white text-lg">CHATBOT</span>
+                <span className=" text-white text-lg font-mono font-bold">OrbitAI</span>
             </Link>
             <div className="flex items-center space-x-4">
                 <Link to="/register" className=" font-medium text-white hover:text-gray-400" prefetch={false}>
